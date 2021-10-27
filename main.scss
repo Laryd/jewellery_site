@@ -27,7 +27,7 @@ header{
         color: #fff;
         text-decoration: none;
         font-weight: 800;
-        animation: .5s loaddelay .7s forwards;
+        animation: .5s loaddelay forwards;
         opacity:0;
         &:hover{
             color:darkslategray;
@@ -54,11 +54,7 @@ header{
         }
     }
 }
-@keyframes loaddelay {
-    100%{
-        opacity: 1;
-    }
-}
+
 .hero{
     display: flex;
     flex-wrap: wrap;
@@ -151,6 +147,11 @@ header{
     }
 }
 @keyframes starslide {
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes loaddelay {
     100%{
         opacity: 1;
     }

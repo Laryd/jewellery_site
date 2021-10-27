@@ -35,8 +35,8 @@ header a {
   color: #fff;
   text-decoration: none;
   font-weight: 800;
-  -webkit-animation: .5s loaddelay .7s forwards;
-          animation: .5s loaddelay .7s forwards;
+  -webkit-animation: .5s loaddelay forwards;
+          animation: .5s loaddelay forwards;
   opacity: 0;
 }
 
@@ -68,18 +68,6 @@ header ul {
 header ul li {
   padding: 17px;
   cursor: pointer;
-}
-
-@-webkit-keyframes loaddelay {
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes loaddelay {
-  100% {
-    opacity: 1;
-  }
 }
 
 .hero {
@@ -215,6 +203,18 @@ header ul li {
 }
 
 @keyframes starslide {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loaddelay {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loaddelay {
   100% {
     opacity: 1;
   }

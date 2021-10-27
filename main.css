@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+}
+
+body {
+  background-color: #46444b;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header a {
+  margin-top: 33px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  -webkit-animation: .5s loaddelay 1s forwards;
+          animation: .5s loaddelay 1s forwards;
+  opacity: 0;
+}
+
+header a:hover {
+  color: darkslategray;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header .logo {
+  font-size: 40px;
+  font-weight: 1000;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 22px;
+  -webkit-animation: .5s loaddelay 0.5s forwards;
+          animation: .5s loaddelay 0.5s forwards;
+  opacity: 0;
+}
+
+header ul li {
+  padding: 17px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes loaddelay {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loaddelay {
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.part1 {
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
+  background: -webkit-gradient(linear, left top, left bottom, from(grey), color-stop(50%, rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(grey, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
+  background-repeat: no-repeat;
+  border-top-right-radius: 220px 500px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  -webkit-animation: 1s herodelay forwards 0.4s;
+          animation: 1s herodelay forwards 0.4s;
+  opacity: 0;
+}
+
+.part2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 58%;
+      flex-basis: 58%;
+  width: 40px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-animation: 1s herodelay forwards 0.8s;
+          animation: 1s herodelay forwards 0.8s;
+}
+
+.part2 h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 150px;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.part2 h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 80px;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  margin-left: auto;
+}
+
+.part2 .minor {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 80px;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  margin-left: auto;
+  margin-right: 255px;
+  padding-bottom: 30px;
+}
+
+.part2 p.star1 {
+  margin-left: auto;
+  margin-right: 70px;
+  font-size: 55px;
+  -webkit-animation: 1s starslide 2s forwards;
+          animation: 1s starslide 2s forwards;
+  opacity: 0;
+}
+
+.part2 p.star2 {
+  margin-left: auto;
+  font-size: 70px;
+  margin-right: 200px;
+  -webkit-animation: 1s starslide 1.7s forwards;
+          animation: 1s starslide 1.7s forwards;
+  opacity: 0;
+}
+
+.part2 p.star3 {
+  margin-left: auto;
+  margin-right: 30px;
+  font-size: 100px;
+  -webkit-animation: 1s starslide 1.2s forwards;
+          animation: 1s starslide 1.2s forwards;
+  opacity: 0;
+}
+
+.btn {
+  padding: 17px;
+  background-color: white;
+  width: 170px;
+  position: relative;
+  text-decoration: none;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 30px;
+  color: black;
+  margin-left: auto;
+  margin-right: 400px;
+}
+
+@-webkit-keyframes herodelay {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes herodelay {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes starslide {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes starslide {
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -15,6 +15,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  overflow: hidden;
 }
 
 header {
@@ -33,15 +35,15 @@ header a {
   color: #fff;
   text-decoration: none;
   font-weight: 800;
-  -webkit-animation: .5s loaddelay 1s forwards;
-          animation: .5s loaddelay 1s forwards;
+  -webkit-animation: .5s loaddelay .7s forwards;
+          animation: .5s loaddelay .7s forwards;
   opacity: 0;
 }
 
 header a:hover {
   color: darkslategray;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 header .logo {

@@ -13,6 +13,8 @@ body{
     color: white;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    overflow: hidden;
 }
 header{
     display: flex;
@@ -25,11 +27,11 @@ header{
         color: #fff;
         text-decoration: none;
         font-weight: 800;
-        animation: .5s loaddelay 1s forwards;
+        animation: .5s loaddelay .7s forwards;
         opacity:0;
         &:hover{
             color:darkslategray;
-            transition: 1s;
+            transition: .5s;
         }
         
     }

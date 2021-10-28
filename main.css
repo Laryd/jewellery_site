@@ -80,27 +80,32 @@ header ul li {
 }
 
 .part1 {
-  -ms-flex-preferred-size: 42%;
-      flex-basis: 42%;
-  background: -webkit-gradient(linear, left top, left bottom, from(grey), color-stop(50%, rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(grey, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
-  background-repeat: no-repeat;
-  border-top-right-radius: 220px 500px;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-animation: 1s herodelay forwards 0.4s;
           animation: 1s herodelay forwards 0.4s;
   opacity: 0;
+  overflow: hidden;
+}
+
+.part1 img {
+  border-top-right-radius: 100%;
+  width: 51vw;
+  height: 80vh;
+  margin-top: 200px;
 }
 
 .part2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -ms-flex-preferred-size: 58%;
-      flex-basis: 58%;
-  width: 40px;
-  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
